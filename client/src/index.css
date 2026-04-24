@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-white text-body-dark;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-display;
+  }
+}
+
+@layer components {
+  /* Primary CTA — always green, per spec */
+  .btn-green {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white bg-brand-green hover:bg-[#008F45] transition-all;
+  }
+  .btn-green-lg {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-white bg-brand-green hover:bg-[#008F45] transition-all text-base;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-brand-blue border border-brand-blue hover:bg-brand-blue hover:text-white transition-all;
+  }
+  .link-blue {
+    @apply text-bright-blue hover:underline;
+  }
+  .container-tight {
+    @apply max-w-6xl mx-auto px-6;
+  }
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.2em] text-bright-blue uppercase;
+  }
+  .h-display {
+    @apply font-display tracking-display text-4xl md:text-6xl leading-tight;
+  }
+  .card {
+    @apply rounded-xl border border-gray-200 bg-white shadow-card transition-all;
+  }
+  .card-hover {
+    @apply hover:border-bright-blue hover:shadow-card-hover;
+  }
+}
