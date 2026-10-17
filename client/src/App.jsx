@@ -1,6 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PromoBar from './components/PromoBar';
 import Home from './pages/Home';
 import HomeServices from './pages/HomeServices';
 import RealEstate from './pages/RealEstate';
@@ -9,8 +10,10 @@ import Ecommerce from './pages/Ecommerce';
 import FoodWater from './pages/FoodWater';
 
 export default function App() {
+  const { pathname } = useLocation();
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      {pathname === '/ecommerce' && <PromoBar />}
       <Header />
       <main className="flex-1">
         <Routes>
