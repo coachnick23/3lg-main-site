@@ -6,6 +6,7 @@ const VERTICALS = [
   { to: '/black-owned', name: 'Black-Owned Businesses' },
   { to: '/ecommerce', name: 'E-Commerce' },
   { to: '/food-water', name: 'Food & Water' },
+  { to: '/tennis', name: 'Coaching & Academies' },
 ];
 
 export default function VerticalsGrid() {
@@ -15,7 +16,7 @@ export default function VerticalsGrid() {
         <h2 className="font-display tracking-display text-3xl md:text-5xl text-body-dark text-center">
           Who We Serve
         </h2>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {VERTICALS.map((v) => (
             <Link
               key={v.to}

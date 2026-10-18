@@ -7,3 +7,4 @@ dist/
 npm-debug.log*
 .pm2/
 client/dist/
+client/dist-preview/

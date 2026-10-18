@@ -7,6 +7,7 @@ import RealEstate from './pages/RealEstate';
 import BlackOwnedBusinesses from './pages/BlackOwnedBusinesses';
 import Ecommerce from './pages/Ecommerce';
 import FoodWater from './pages/FoodWater';
+import Tennis from './pages/Tennis';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/black-owned" element={<BlackOwnedBusinesses />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/food-water" element={<FoodWater />} />
+          <Route path="/tennis" element={<Tennis />} />
         </Routes>
       </main>
       <Footer />
